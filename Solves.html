@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from 2023.imaginaryctf.org/Solves by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 15:51:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solves - ImaginaryCTF</title>
+    <meta name="author" content="Et3rnos" />
+    <link rel="icon" type="image/png" href="img/icon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/site84bc.css?v=uUxEKgR3yGX0ovIIlJolHelMsV8BandW1paeVYqlF_A" />
+    
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MH677SC');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body class="text-center bg-light d-flex flex-column min-vh-100">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MH677SC"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+<nav class="navbar navbar-dark sticky-top p-0 text-center">
+    <div class="w-100 bg-logo p-2">
+        <a class="text-decoration-none" href="index.html">
+            <div class="navbar-brand float-start ms-2">
+                <img src="img/logo.png" height="40" class="d-inline-block align-middle logo-img" alt="iCTF">
+            </div>
+            <span class="logo-text text-white">ImaginaryCTF 2023</span>
+        </a>
+        <button class="navbar-toggler sidenav-toggler float-end m-1" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="menu sidenav bg-darker-smooth" style="transform: translate(100%)">
+        <ul class="navbar-nav p-2 pl-1 pr-1 big-rounded">
+            <li class="nav-item menu-item mt-1 border-bottom border-2 text-nowrap">
+                <div class="nav-roo-container float-start ms-3">
+                    
+                </div>
+                <a class="nav-link menu-link" href="index.html">Home Page</a>
+                <div class="nav-roo-container float-end me-3">
+                    
+                </div>
+            </li>
+            <li class="nav-item menu-item mt-2 border-bottom border-2 text-nowrap">
+                <div class="nav-roo-container float-start ms-3">
+                    
+                </div>
+                <a class="nav-link menu-link" href="Challenges.html">Challenges</a>
+                <div class="nav-roo-container float-end me-3">
+                    
+                </div>
+            </li>
+            <li class="nav-item menu-item mt-2 border-bottom border-2 text-nowrap">
+                <div class="nav-roo-container float-start ms-3">
+                    
+                </div>
+                <a class="nav-link menu-link" href="Leaderboard.html">Leaderboard</a>
+                <div class="nav-roo-container float-end me-3">
+                    
+                </div>
+            </li>
+            <li class="nav-item menu-item mt-2 border-bottom border-2 text-nowrap">
+                <div class="nav-roo-container float-start ms-3">
+                    
+                </div>
+                <a class="nav-link menu-link" href="Solves.html">Solves</a>
+                <div class="nav-roo-container float-end me-3">
+                    
+                </div>
+            </li>
+                <li class="nav-item menu-item mt-2 border-bottom border-2 text-nowrap">
+                    <div class="nav-roo-container float-start ms-3">
+                        
+                    </div>
+                    <a class="nav-link menu-link" href="Register.html">Register</a>
+                    <div class="nav-roo-container float-end me-3">
+                        
+                    </div>
+                </li>
+                <li class="nav-item menu-item mt-2 border-bottom border-2 text-nowrap">
+                    <div class="nav-roo-container float-start ms-3">
+                        
+                    </div>
+                    <a class="nav-link menu-link d-inline-block" href="Login.html">Login</a>
+                    <div class="nav-roo-container float-end me-3">
+                        
+                    </div>
+                </li>
+        </ul>
+    </div>
+</nav>
+
+    
+
+<div class="container mb-3">
+    <h1 class="text-center m-3">Solves</h1>
+    <ul class="list-group">
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:59:12.3802560Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/967.html">Haboro</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/230.html">Triple Triple</a>)
+                solved
+                <b>chaos</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:59:11.2969150Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/515.html">r3tZy</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/124.html">x0rc3r3rs</a>)
+                solved
+                <b>Feedback Survey</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:56:31.5215500Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2603.html">saboor-hakimi</a>
+                solved
+                <b>Feedback Survey</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:56:09.8371480Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2503.html">awoo</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/404.html">Cyberhawks</a>)
+                solved
+                <b>blank</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:54:20.3427480Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/257.html">NIS</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/59.html">NIS</a>)
+                solved
+                <b>Login</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:53:31.5277350Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2715.html">TheFlash</a>
+                solved
+                <b>idoriot-revenge</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:53:27.1454010Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2715.html">TheFlash</a>
+                solved
+                <b>Perfect Picture</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:53:22.7178940Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2715.html">TheFlash</a>
+                solved
+                <b>roks</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:53:17.6425630Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2715.html">TheFlash</a>
+                solved
+                <b>Feedback Survey</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:53:13.1227070Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2715.html">TheFlash</a>
+                solved
+                <b>Discord</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:53:08.9405560Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2715.html">TheFlash</a>
+                solved
+                <b>Sanity Check</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:53:04.1068830Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2715.html">TheFlash</a>
+                solved
+                <b>blank</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:52:59.7055440Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2715.html">TheFlash</a>
+                solved
+                <b>inspection</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:52:53.4589370Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2715.html">TheFlash</a>
+                solved
+                <b>Idoriot</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:49:49.8178800Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/1435.html">limon4ik</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/227.html">Dream Aboba Team</a>)
+                solved
+                <b>emoticons</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:49:28.1267000Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/1296.html">zeosutt</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/298.html">spookies</a>)
+                solved
+                <b>mailman</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:49:04.3665860Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/525.html">FlagMotori</a>
+                solved
+                <b>Sanitized Revenge</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:49:03.6432890Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/899.html">Mitty240</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/227.html">Dream Aboba Team</a>)
+                solved
+                <b>blurry</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:48:58.7444600Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/1390.html">PSU-Void-Vikings</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/308.html">PSU-Void_VIKINGS</a>)
+                solved
+                <b>Discord</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:47:31.5138030Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/1075.html">Myr</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/251.html">ALeKA</a>)
+                solved
+                <b>chaos</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:45:49.5782990Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/802.html">Achleole</a>
+                solved
+                <b>roks</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:45:39.3619380Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/921.html">replayer</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/217.html">ReTry</a>)
+                solved
+                <b>idoriot-revenge</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:45:32.3151750Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/177.html">xentres86</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/146.html">ayksternat0r</a>)
+                solved
+                <b>form</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:45:08.6460330Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/177.html">xentres86</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/146.html">ayksternat0r</a>)
+                solved
+                <b>ret2lose</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:44:59.5922580Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/907.html">sam.ninja</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/211.html">polygl0ts</a>)
+                solved
+                <b>Login</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:44:33.3427420Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2437.html">Kai</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/397.html">Kai</a>)
+                solved
+                <b>Perfect Picture</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:43:40.3114710Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/476.html">unvariant</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/120.html">les amateurs</a>)
+                solved
+                <b>form</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:43:01.7090380Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/763.html">Ordoviz</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/178.html">GammaSnake</a>)
+                solved
+                <b>Feedback Survey</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:43:01.0043380Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/500.html">D0pp3lgang3r</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/206.html">NSFW</a>)
+                solved
+                <b>signer</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:42:59.8678750Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/177.html">xentres86</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/146.html">ayksternat0r</a>)
+                solved
+                <b>ret2win</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:42:22.6174190Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/1266.html">aleksav013</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/269.html">CyberHero</a>)
+                solved
+                <b>emoticons</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:42:10.8327220Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2714.html">Cr4zyF0x</a>
+                solved
+                <b>Idoriot</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:41:18.3849360Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2312.html">sav4n</a>
+                solved
+                <b>Sanity Check</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:40:57.4253630Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/950.html">uny49</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/221.html">C</a>)
+                solved
+                <b>Feedback Survey</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:39:56.9628940Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/426.html">yoyonanachi</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/400.html">YoyoIamWeak</a>)
+                solved
+                <b>snailchecker</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:39:15.2217810Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2714.html">Cr4zyF0x</a>
+                solved
+                <b>ret2win</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:39:08.2322620Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/815.html">pigadoor</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/188.html">PunchClub</a>)
+                solved
+                <b>inspection</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:38:21.7595450Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2085.html">W4ntY0u</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/372.html">W4ntY0u</a>)
+                solved
+                <b>Feedback Survey</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:37:17.3604140Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2695.html">RaR_Virus</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/431.html">CyberBangla</a>)
+                solved
+                <b>idoriot-revenge</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:35:35.0710110Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2714.html">Cr4zyF0x</a>
+                solved
+                <b>Discord</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:33:38.7142300Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2527.html">maskirovka</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/302.html">Bits &amp; Pieces</a>)
+                solved
+                <b>idoriot-revenge</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:33:18.5434170Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/402.html">av0</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/99.html">NMB unit 6l</a>)
+                solved
+                <b>chaos</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:33:00.4370500Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2714.html">Cr4zyF0x</a>
+                solved
+                <b>Feedback Survey</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:31:41.5514000Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2695.html">RaR_Virus</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/431.html">CyberBangla</a>)
+                solved
+                <b>Idoriot</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:30:31.7086000Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2714.html">Cr4zyF0x</a>
+                solved
+                <b>snailchecker</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:30:23.3624610Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2714.html">Cr4zyF0x</a>
+                solved
+                <b>signpost</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:30:21.4469140Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2695.html">RaR_Virus</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/431.html">CyberBangla</a>)
+                solved
+                <b>inspection</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:30:14.1058770Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/1048.html">spikeroot</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/248.html">ret2school</a>)
+                solved
+                <b>Feedback Survey</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:29:44.6175670Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2695.html">RaR_Virus</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/431.html">CyberBangla</a>)
+                solved
+                <b>Discord</b>
+            </li>
+            <li class="list-group-item">
+                <script>
+                    var date = new Date("2023-07-23T18:29:36.1154560Z");
+                    document.write(date.toISOString().substring(0, 19).replace("T", " ").replaceAll("-", "index.html"));
+                </script> -
+                <a class="text-decoration-none gray-text cool-link fw-bold" href="User/2695.html">RaR_Virus</a>
+                    (team <a class="text-decoration-none gray-text cool-link fw-bold" href="Team/431.html">CyberBangla</a>)
+                solved
+                <b>Sanity Check</b>
+            </li>
+    </ul>
+</div>
+
+    <footer class="bg-darker-gray text-white p-2 d-flex align-items-center justify-content-around mt-auto">
+    <small>
+        Made with
+        <a class="text-white text-decoration-none cool-link" data-bs-toggle="modal" data-bs-target="#credits" href="#">
+            ImaginaryCTF
+        </a>
+    </small>
+    <div>
+        <a href="https://twitter.com/ImaginaryCtf" class="me-2 text-white text-decoration-none" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.reddit.com/r/ICTF/" class="me-2 text-white text-decoration-none" target="_blank">
+            <i class="fab fa-reddit-alien"></i>
+        </a>
+        <a href="https://discord.gg/QxFdGYPd4P" class="me-2 text-white text-decoration-none" target="_blank">
+            <i class="fab fa-discord"></i>
+        </a>
+    </div>
+    <div class="modal fade" id="credits">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">About ImaginaryCTF</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>ImaginaryCTF is a platform created by Et3rnos that brings the beauty of CTF Competitions to discord, releasing a challenge every day</p>
+                    <a class="d-block btn btn-success mb-2" target="_blank" href="https://github.com/Et3rnos/ImaginaryCTF">View ImaginaryCTF on GitHub</a>
+                    <a class="d-block btn btn-danger mb-2" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#support" href="#">Support ImaginaryCTF Creator</a>
+                    <a class="d-block btn btn-dark" href="https://et3rnos.github.io/hireme" target="_blank">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="support">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">Support Et3rnos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Glad to know you are planning on supporting me!</p>
+                    <div class="mb-2">
+                        <a class="btn btn-danger" target="_blank" href="https://patreon.com/et3rnos">Support Me On Patreon <i class="fab fa-patreon"></i></a>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" target="_blank" href="https://www.paypal.com/donate?hosted_button_id=JSM77LBGLJ3FG">Support Me With Paypal <i class="fab fa-paypal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/eeaba7a5c6.js"></script>
+    <script src="js/site7082.js?v=iCCnGY6acmDdTRru-NXP5d3m425iqdOd0iEEzjMUk8I"></script>
+</body>
+
+<!-- Mirrored from 2023.imaginaryctf.org/Solves by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 15:51:46 GMT -->
+</html>

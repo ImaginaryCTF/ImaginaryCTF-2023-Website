@@ -1,0 +1,2239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from 2023.imaginaryctf.org/Challenges by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 15:26:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenges - ImaginaryCTF</title>
+    <meta name="author" content="Et3rnos" />
+    <link rel="icon" type="image/png" href="img/icon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/site84bc.css?v=uUxEKgR3yGX0ovIIlJolHelMsV8BandW1paeVYqlF_A" />
+    
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MH677SC');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body class="text-center bg-light d-flex flex-column min-vh-100">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MH677SC"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+<nav class="navbar navbar-dark sticky-top p-0 text-center">
+    <div class="w-100 bg-logo p-2">
+        <a class="text-decoration-none" href="index.html">
+            <div class="navbar-brand float-start ms-2">
+                <img src="img/logo.png" height="40" class="d-inline-block align-middle logo-img" alt="iCTF">
+            </div>
+            <span class="logo-text text-white">ImaginaryCTF 2023</span>
+        </a>
+        <button class="navbar-toggler sidenav-toggler float-end m-1" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="menu sidenav bg-darker-smooth" style="transform: translate(100%)">
+        <ul class="navbar-nav p-2 pl-1 pr-1 big-rounded">
+            <li class="nav-item menu-item mt-1 border-bottom border-2 text-nowrap">
+                <div class="nav-roo-container float-start ms-3">
+                    
+                </div>
+                <a class="nav-link menu-link" href="index.html">Home Page</a>
+                <div class="nav-roo-container float-end me-3">
+                    
+                </div>
+            </li>
+            <li class="nav-item menu-item mt-2 border-bottom border-2 text-nowrap">
+                <div class="nav-roo-container float-start ms-3">
+                    
+                </div>
+                <a class="nav-link menu-link" href="Challenges.html">Challenges</a>
+                <div class="nav-roo-container float-end me-3">
+                    
+                </div>
+            </li>
+            <li class="nav-item menu-item mt-2 border-bottom border-2 text-nowrap">
+                <div class="nav-roo-container float-start ms-3">
+                    
+                </div>
+                <a class="nav-link menu-link" href="Leaderboard.html">Leaderboard</a>
+                <div class="nav-roo-container float-end me-3">
+                    
+                </div>
+            </li>
+            <li class="nav-item menu-item mt-2 border-bottom border-2 text-nowrap">
+                <div class="nav-roo-container float-start ms-3">
+                    
+                </div>
+                <a class="nav-link menu-link" href="Solves.html">Solves</a>
+                <div class="nav-roo-container float-end me-3">
+                    
+                </div>
+            </li>
+                <li class="nav-item menu-item mt-2 border-bottom border-2 text-nowrap">
+                    <div class="nav-roo-container float-start ms-3">
+                        
+                    </div>
+                    <a class="nav-link menu-link" href="Register.html">Register</a>
+                    <div class="nav-roo-container float-end me-3">
+                        
+                    </div>
+                </li>
+                <li class="nav-item menu-item mt-2 border-bottom border-2 text-nowrap">
+                    <div class="nav-roo-container float-start ms-3">
+                        
+                    </div>
+                    <a class="nav-link menu-link d-inline-block" href="Login.html">Login</a>
+                    <div class="nav-roo-container float-end me-3">
+                        
+                    </div>
+                </li>
+        </ul>
+    </div>
+</nav>
+
+    
+
+
+
+
+<div class="container">
+    <h1 class="text-center m-3">Challenges</h1>
+    <div>
+    </div>
+    <div class="row">
+            <div>
+                <div class="alert alert-warning">
+                    The competition is already over. You cannot submit any flags now.
+                </div>
+            </div>
+            <h3 class="text-start">Misc</h3>
+            <hr />
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Sanity Check (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-15" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-15">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Sanity Check (100 pts) <span class="d-inline-block">- 778 solves</span><br /><small class="text-muted">by Board</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Welcome to ImaginaryCTF 2023! The sanity check flag is <code>ictf{welcome_to_imaginaryctf_2023!}</code> All flags will follow the regex <code>ictf{[^}]+}</code>.</p>
+
+                                <b>Attachments</b>
+                                <p>N/A</p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Discord (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-16" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-16">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Discord (100 pts) <span class="d-inline-block">- 433 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Join our Discord server at <a href="https://discord.gg/ctf/">https://discord.gg/ctf/</a>.</p>
+
+                                <b>Attachments</b>
+                                <p>N/A</p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Feedback Survey (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-58" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-58">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Feedback Survey (100 pts) <span class="d-inline-block">- 289 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Thank you for playing ImaginaryCTF 2023! We hope you enjoyed. Please give us feedback so we can improve for next year!</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://forms.gle/8cjD59jMknsJPvx56">https://forms.gle/8cjD59jMknsJPvx56</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            signpost (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-18" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-18">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">signpost (100 pts) <span class="d-inline-block">- 178 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Tracking down pictures can be hard. Surely you can't find where this giant ballpark is...</p>
+<p>Submit your flag as <code>ictf{latitude,longitude}</code>, with the coordinates of where the picture was taken rounded to three decimal places. Example: <code>ictf{-42.443,101.333}</code></p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/sZAdu#signpost.png">https://imaginaryctf.org/r/sZAdu#signpost.png</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            You shall not call! (498pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-21" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-21">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">You shall not call! (498 pts) <span class="d-inline-block">- 5 solves</span><br /><small class="text-muted">by A~Z</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Never have I seen a pickle, worming its way out of a jail, whose exploitation did not rely upon the calling of some nefarious function.
+Thus, I hereby declare: there shall be no call heeded within this domain anymore.
+It is for I yearn the secure confinement of pickles; and shall not stand their escape.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/DvMPf#server.py">https://imaginaryctf.org/r/DvMPf#server.py</a>
+<code>nc you-shall-not-call.chal.imaginaryctf.org 1337</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            deletion (499pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-17" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-17">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">deletion (499 pts) <span class="d-inline-block">- 4 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Enter your payload:<code>*** stack smashing detected ***: pyjail terminated Aborted (core dumped)</code></p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/MsXr5#main.py">https://imaginaryctf.org/r/MsXr5#main.py</a> <code>nc deletion.chal.imaginaryctf.org 1337</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            You shall not call Revenge (499pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-54" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-54">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">You shall not call Revenge (499 pts) <span class="d-inline-block">- 4 solves</span><br /><small class="text-muted">by A~Z</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Never have I seen a pickle, worming its way out of a jail, whose exploitation did not rely upon the calling of some nefarious function.
+Thus, I hereby declare: there shall be no call heeded within this domain anymore.
+It is for I yearn the secure confinement of pickles; and shall not stand their escape.</p>
+<p>The server isn't changed, but you must get RCE to read flag this time.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/DvMPf#server.py">https://imaginaryctf.org/r/DvMPf#server.py</a>
+<code>nc you-shall-not-call-revenge.chal.imaginaryctf.org 1337</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            obscured (500pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-19" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-19">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">obscured (500 pts) <span class="d-inline-block">- 2 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>People who consistently push me to read up on obscure quirks of Linux systems - you know who you are.</p>
+
+                                <b>Attachments</b>
+                                <p><code>nc obscured.chal.imaginaryctf.org 42000</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Get and set (500pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-11" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-11">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Get and set (500 pts) <span class="d-inline-block">- 2 solves</span><br /><small class="text-muted">by maple3142</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>A Pyjail with direct code execution gives you too much freedom, so I made a Pyjail where you can only only <code>get</code> and <code>set</code>.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/M8TZd#server.py">https://imaginaryctf.org/r/M8TZd#server.py</a>
+<code>nc get-and-set.chal.imaginaryctf.org 1337</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Temu (500pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-3" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-3">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Temu (500 pts) <span class="d-inline-block">- 2 solves</span><br /><small class="text-muted">by puzzler7</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Writing a terminal emulator is one of those things that's not-that-hard to get a proof of concept, but making a polished final product can be tricky. I know there's many a flaw in this one, but I tried to at least make it as pretty as possible</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/tf2yw#temu.py">https://imaginaryctf.org/r/tf2yw#temu.py</a></p>
+<pre><code>socat FILE:`tty`,raw,echo=0 TCP:temu.chal.imaginaryctf.org:1337
+</code></pre>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <h3 class="text-start">Web</h3>
+            <hr />
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Idoriot (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-6" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-6">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Idoriot (100 pts) <span class="d-inline-block">- 474 solves</span><br /><small class="text-muted">by tirefire</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Some idiot made this web site that you can log in to. The idiot even made it in php. I dunno.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="http://idoriot.chal.imaginaryctf.org/">http://idoriot.chal.imaginaryctf.org/</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            inspection (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-48" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-48">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">inspection (100 pts) <span class="d-inline-block">- 473 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p m4rkdown_parser_fail_1a211b44="">Here's a freebie: the flag is ictf.</p>
+
+                                <b>Attachments</b>
+                                <p>N/A</p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            roks (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-50" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-50">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">roks (100 pts) <span class="d-inline-block">- 328 solves</span><br /><small class="text-muted">by FIREPONY57</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>My rock enthusiast friend made a website to show off some of his pictures. Could you do something with it?</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/0Sm4V#roks.zip">https://imaginaryctf.org/r/0Sm4V#roks.zip</a>
+<a href="http://roks.chal.imaginaryctf.org/">http://roks.chal.imaginaryctf.org</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Perfect Picture (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-49" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-49">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Perfect Picture (100 pts) <span class="d-inline-block">- 283 solves</span><br /><small class="text-muted">by FIREPONY57</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Someone seems awful particular about where their pixels go...</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/Gdmod#perfect_picture.zip">https://imaginaryctf.org/r/Gdmod#perfect_picture.zip</a>
+<a href="http://perfect-picture.chal.imaginaryctf.org/">http://perfect-picture.chal.imaginaryctf.org</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            blank (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-47" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-47">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">blank (100 pts) <span class="d-inline-block">- 210 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>I asked ChatGPT to make me a website. It refused to make it vulnerable so I added a little something to make it interesting. I might have forgotten something though...</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/FVauo#blank_dist.zip">https://imaginaryctf.org/r/FVauo#blank_dist.zip</a>
+<a href="http://blank.chal.imaginaryctf.org/">http://blank.chal.imaginaryctf.org</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            idoriot-revenge (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-51" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-51">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">idoriot-revenge (100 pts) <span class="d-inline-block">- 189 solves</span><br /><small class="text-muted">by tirefire</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>The idiot who made it, made it so bad that the first version was super easy. It was changed to fix it.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="http://idoriot-revenge.chal.imaginaryctf.org/">http://idoriot-revenge.chal.imaginaryctf.org</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Login (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-13" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-13">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Login (100 pts) <span class="d-inline-block">- 98 solves</span><br /><small class="text-muted">by maple3142</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>A classic PHP login page, nothing special.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="http://login.chal.imaginaryctf.org/">http://login.chal.imaginaryctf.org/</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            amogus (484pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-5" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-5">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">amogus (484 pts) <span class="d-inline-block">- 14 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Sometimes the strongest among us are the ones who smile through silent pain, cry behind closed doors, and fight battles nobody knows about.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/cXEZL">https://imaginaryctf.org/r/cXEZL</a>
+<a href="http://amogus.chal.imaginaryctf.org/">http://amogus.chal.imaginaryctf.org/</a>
+<code>nc amogus-admin-bot.chal.imaginaryctf.org 1337</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Sanitized (498pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-14" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-14">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Sanitized (498 pts) <span class="d-inline-block">- 5 solves</span><br /><small class="text-muted">by maple3142</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>You are not going to find a DOMPurify 0day right?</p>
+
+                                <b>Attachments</b>
+                                <p><a href="http://sanitized.chal.imaginaryctf.org/">http://sanitized.chal.imaginaryctf.org/</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Sanitized Revenge (499pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-55" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-55">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Sanitized Revenge (499 pts) <span class="d-inline-block">- 3 solves</span><br /><small class="text-muted">by maple3142</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>You are not going to find a DOMPurify 0day right?</p>
+<p>There is an unintended solution that made the previous one much easier than the intended solution. If you solved the previous one using the intended, this is a free flag for you.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="http://sanitized-revenge.chal.imaginaryctf.org/">http://sanitized-revenge.chal.imaginaryctf.org/</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <h3 class="text-start">Crypto</h3>
+            <hr />
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            rsa (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-25" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-25">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">rsa (100 pts) <span class="d-inline-block">- 262 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>I think I did my RSA right...</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/Pg2iM#flag.enc">https://imaginaryctf.org/r/Pg2iM#flag.enc</a>
+<a href="https://imaginaryctf.org/r/fpPlb#public.pem">https://imaginaryctf.org/r/fpPlb#public.pem</a>
+<a href="https://imaginaryctf.org/r/uwcyX#private.pem">https://imaginaryctf.org/r/uwcyX#private.pem</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            emoticons (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-24" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-24">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">emoticons (100 pts) <span class="d-inline-block">- 152 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>It seems that emoji &quot;crypto&quot; challenges are all the rage nowadays... Well, here's another one for you!</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/54Pne#out.txt">https://imaginaryctf.org/r/54Pne#out.txt</a>
+<a href="https://imaginaryctf.org/r/3ZbKK#gen.py">https://imaginaryctf.org/r/3ZbKK#gen.py</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            signer (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-26" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-26">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">signer (100 pts) <span class="d-inline-block">- 94 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>My new secure signing service is up! It uses state-of-the-art cryptographically secure hashes and can sign anything! Except, of course, the password.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/4cONq#main.py">https://imaginaryctf.org/r/4cONq#main.py</a>
+<code>nc signer.chal.imaginaryctf.org 1337</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Tan (418pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-7" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-7">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Tan (418 pts) <span class="d-inline-block">- 32 solves</span><br /><small class="text-muted">by maple3142</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p><code>tan(x)</code> is a broken hash function in terms of collision resistance and second preimage resistance. But you surely can't find the preimage of <code>tan(flag)</code>, right?</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/hIdWp#tan.sage">https://imaginaryctf.org/r/hIdWp#tan.sage</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Wasteful (423pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-9" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-9">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Wasteful (423 pts) <span class="d-inline-block">- 31 solves</span><br /><small class="text-muted">by maple3142</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>I am going to make RSA encryption more time-consuming for no reason 😛</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/vqMeh#chall.py">https://imaginaryctf.org/r/vqMeh#chall.py</a>
+<a href="https://imaginaryctf.org/r/qoehk#output.txt">https://imaginaryctf.org/r/qoehk#output.txt</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Blind guess (495pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-20" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-20">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Blind guess (495 pts) <span class="d-inline-block">- 8 solves</span><br /><small class="text-muted">by A~Z</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>So guessy... I sure hope there's no guess gods out there.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/ulQgb">https://imaginaryctf.org/r/ulQgb</a>
+<code>nc blind-guess.chal.imaginaryctf.org 1337</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Flagtor (498pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-2" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-2">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Flagtor (498 pts) <span class="d-inline-block">- 5 solves</span><br /><small class="text-muted">by Robin_Jadoul</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>I threw in a bit of source-given rev, because why not.</p>
+<p>&gt; I hate crypto and rev because both are math</p>
+<p>Sorry to people who feel like this and even say so in the ictf discord 😉</p>
+
+                                <b>Attachments</b>
+                                <ul>
+<li><a href="https://imaginaryctf.org/r/oIm0B#flagtor.factor">https://imaginaryctf.org/r/oIm0B#flagtor.factor</a></li>
+<li><a href="https://imaginaryctf.org/r/yov25#out.txt">https://imaginaryctf.org/r/yov25#out.txt</a></li>
+</ul>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            elliptic (499pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-23" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-23">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">elliptic (499 pts) <span class="d-inline-block">- 4 solves</span><br /><small class="text-muted">by Eth007, A~Z</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Show me that you are who you say you are, and maybe you will get a flag.</p>
+
+                                <b>Attachments</b>
+                                <p><code>nc elliptic.chal.imaginaryctf.org 1337</code>
+<a href="https://imaginaryctf.org/r/bpDMm">https://imaginaryctf.org/r/bpDMm</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Imaginary Casino (499pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-10" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-10">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Imaginary Casino (499 pts) <span class="d-inline-block">- 3 solves</span><br /><small class="text-muted">by maple3142</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Immerse yourself in the captivating simplicity of Imaginary Casino, where a single game of coin flip becomes a thrilling quantum experience. Powered by a quantum-secure random number generator, every flip is truly unpredictable, ensuring an unparalleled level of fairness and excitement.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/142G2#server.py">https://imaginaryctf.org/r/142G2#server.py</a>
+<a href="https://imaginaryctf.org/r/M7jOW#csidh-latest.tar.xz">https://imaginaryctf.org/r/M7jOW#csidh-latest.tar.xz</a>
+<code>nc imaginary-casino.chal.imaginaryctf.org 1337</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Sus (499pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-8" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-8">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Sus (499 pts) <span class="d-inline-block">- 3 solves</span><br /><small class="text-muted">by maple3142</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Apparently, there is something weird happening with the prime generation.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/0Jm3W#challenge.py">https://imaginaryctf.org/r/0Jm3W#challenge.py</a>
+<a href="https://imaginaryctf.org/r/hgNST#output.txt">https://imaginaryctf.org/r/hgNST#output.txt</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <h3 class="text-start">Pwn</h3>
+            <hr />
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            ret2win (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-38" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-38">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">ret2win (100 pts) <span class="d-inline-block">- 234 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Can you overflow the buffer and get the flag? (Hint: if your exploit isn't working on the remote server, look into stack alignment)</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/BoCID#vuln">https://imaginaryctf.org/r/BoCID#vuln</a>
+<a href="https://imaginaryctf.org/r/73iLJ#vuln.c">https://imaginaryctf.org/r/73iLJ#vuln.c</a>
+<code>nc ret2win.chal.imaginaryctf.org 1337</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            ret2lose (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-39" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-39">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">ret2lose (100 pts) <span class="d-inline-block">- 87 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>You overflowed the buffer and got the flag... but can you get my other flag? (Remote and binary are the same as in the challenge <code>ret2win</code>, but you have to get a shell this time)</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/BoCID#vuln">https://imaginaryctf.org/r/BoCID#vuln</a>
+<a href="https://imaginaryctf.org/r/73iLJ#vuln.c">https://imaginaryctf.org/r/73iLJ#vuln.c</a>
+<code>nc ret2win.chal.imaginaryctf.org 1337</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            mailman (423pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-36" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-36">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">mailman (423 pts) <span class="d-inline-block">- 31 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>I'm sure that my post office is 100% secure! It uses some of the latest software, unlike some of the other post offices out there...</p>
+<p>Flag is in <code>./flag.txt</code>.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/PIxtO#vuln">https://imaginaryctf.org/r/PIxtO#vuln</a>
+<a href="https://imaginaryctf.org/r/c9Mk8#libc.so.6">https://imaginaryctf.org/r/c9Mk8#libc.so.6</a>
+<code>nc mailman.chal.imaginaryctf.org 1337</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            form (423pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-33" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-33">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">form (423 pts) <span class="d-inline-block">- 31 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>The obligatory format string challenge comes back, but with a twist.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/V35Q9#vuln">https://imaginaryctf.org/r/V35Q9#vuln</a>
+<code>nc form.chal.imaginaryctf.org 1337</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            minimaler (474pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-57" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-57">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">minimaler (474 pts) <span class="d-inline-block">- 18 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Gone.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/rYkqn#minimaler.zip">https://imaginaryctf.org/r/rYkqn#minimaler.zip</a>
+<code>nc minimaler.chal.imaginaryctf.org 42043</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            minimal (477pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-37" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-37">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">minimal (477 pts) <span class="d-inline-block">- 17 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>You don't know what you've got until it's gone.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/OVfU5#minimal.zip">https://imaginaryctf.org/r/OVfU5#minimal.zip</a>
+<code>nc minimal.chal.imaginaryctf.org 42042</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            generic-rop-challenge (480pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-34" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-34">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">generic-rop-challenge (480 pts) <span class="d-inline-block">- 16 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>It's just a buffer overflow, I'm telling you!</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/KSNQy#generic_rop_challenge_release.zip">https://imaginaryctf.org/r/KSNQy#generic_rop_challenge_release.zip</a>
+<code>nc generic-rop-challenge.chal.imaginaryctf.org 42042</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            window-of-opportunity (490pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-42" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-42">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">window-of-opportunity (490 pts) <span class="d-inline-block">- 11 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Sometimes, there is a glimmer of hope, a spark of inspiration, a window of opportunity.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/izYM0#opportunity_dist.zip">https://imaginaryctf.org/r/izYM0#opportunity_dist.zip</a>
+<code>nc window-of-opportunity.chal.imaginaryctf.org 1337</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            vault (496pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-40" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-40">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">vault (496 pts) <span class="d-inline-block">- 7 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>I created a new password management system to store your secrets and passwords! The retrieval functions aren't built yet though...</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/f/h84VQ#vuln">https://imaginaryctf.org/f/h84VQ#vuln</a>
+<code>nc vault.chal.imaginaryctf.org 1337</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            lcode (497pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-35" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-35">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">lcode (497 pts) <span class="d-inline-block">- 6 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Shellcode challenges take Ls tbh</p>
+<p>The flag is in <code>./flag.txt</code>.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/tULyt#vuln">https://imaginaryctf.org/r/tULyt#vuln</a>
+<code>nc lcode.chal.imaginaryctf.org 1337</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            vmdungeon (497pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-41" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-41">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">vmdungeon (497 pts) <span class="d-inline-block">- 6 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Where is your key of promise? (Same binary as vmcastle)</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/Ryriu#vmdungeon.zip">https://imaginaryctf.org/r/Ryriu#vmdungeon.zip</a>
+<code>nc vmdungeon.chal.imaginaryctf.org 1337</code></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <h3 class="text-start">Forensics</h3>
+            <hr />
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            web (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-32" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-32">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">web (100 pts) <span class="d-inline-block">- 180 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>We recovered this file from the disk of a potential threat actor. Can you find out what they were up to?</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/y1V79#web.zip">https://imaginaryctf.org/r/y1V79#web.zip</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            blurry (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-27" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-27">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">blurry (100 pts) <span class="d-inline-block">- 131 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>QR codes are error-correcting... whatever that means. How much error can it take though?</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/kaegq#chall.png">https://imaginaryctf.org/r/kaegq#chall.png</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            rev (162pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-52" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-52">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">rev (162 pts) <span class="d-inline-block">- 65 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>I guess reversing deserved a challenge after all.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/LbqcK#rev.zip">https://imaginaryctf.org/r/LbqcK#rev.zip</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            crypto (458pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-28" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-28">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">crypto (458 pts) <span class="d-inline-block">- 23 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Yes, my python program crashed. But I made sure to scrub all the sensitive details out of the coredump!</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/Bz79z#crypto.zip">https://imaginaryctf.org/r/Bz79z#crypto.zip</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            pwn (482pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-30" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-30">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">pwn (482 pts) <span class="d-inline-block">- 15 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Someone got into my server. But at least I had proper logging in place! Can you figure out how they got in?</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/MACbb#chall.pcap">https://imaginaryctf.org/r/MACbb#chall.pcap</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            forensics (490pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-29" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-29">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">forensics (490 pts) <span class="d-inline-block">- 11 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Corruption, like a stealthy predator, preys upon the foundation of trust, leaving in its wake a trail of shattered ideals and compromised values.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/fvRXC#forensics.zip">https://imaginaryctf.org/r/fvRXC#forensics.zip</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            steganographic (492pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-31" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-31">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">steganographic (492 pts) <span class="d-inline-block">- 10 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>If I want to send a steganographic message over the internet, I should definitely make my own algorithm. So don't go and start plugging it into random steg tools until you find the flag. You won't.</p>
+<p>Note: we may release a hint if this ends up to be too guessy.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/DN4lD#chall.png">https://imaginaryctf.org/r/DN4lD#chall.png</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            System Hardening 9 (498pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-53" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-53">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">System Hardening 9 (498 pts) <span class="d-inline-block">- 5 solves</span><br /><small class="text-muted">by FIREPONY57, Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Windows users beware. (we haven't forgotten about you...)</p>
+
+                                <b>Attachments</b>
+                                <ul>
+<li>README: <a href="https://eth007.me/cypat/syshardening9">https://eth007.me/cypat/syshardening9</a></li>
+<li>Download link: <a href="https://drive.google.com/file/d/1gYM366G8HG_WSEGIR90widby_XoVkDxK/view">https://drive.google.com/file/d/1gYM366G8HG_WSEGIR90widby_XoVkDxK/view</a></li>
+<li>Mirror: <a href="https://drive.google.com/file/d/15vsXYg87gWumi2p0-8SfOJsrVI5mnSIj/view">https://drive.google.com/file/d/15vsXYg87gWumi2p0-8SfOJsrVI5mnSIj/view</a></li>
+</ul>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            System Hardening 8 (500pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-22" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-22">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">System Hardening 8 (500 pts) <span class="d-inline-block">- 1 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>I am a servant of the Secret Fire, wielder of the flame of Anor. You cannot pass. The dark fire will not avail you, flame of Udûn. Go back to the Shadow! You cannot pass.</p>
+<p>You may have to use 7-zip to unzip the file.</p>
+
+                                <b>Attachments</b>
+                                <ul>
+<li>README: <a href="https://eth007.me/cypat/syshardening8">https://eth007.me/cypat/syshardening8</a></li>
+<li>Main download link: <a href="https://drive.google.com/file/d/1N6fpGL-ZlT5C8nvf4Y68nSKz65CqyfBH/view">https://drive.google.com/file/d/1N6fpGL-ZlT5C8nvf4Y68nSKz65CqyfBH/view</a></li>
+<li>Mirror: <a href="https://drive.google.com/file/d/1opnMXhiVHj2iqkb2yZPHNOUsSDp6eKyh/view?usp=drive_link">https://drive.google.com/file/d/1opnMXhiVHj2iqkb2yZPHNOUsSDp6eKyh/view?usp=drive_link</a></li>
+<li>Mirror: <a href="https://drive.google.com/file/d/1R4hvCRKuZx5dP5gGqOhgESAiJDx8wa5N/view?usp=sharing">https://drive.google.com/file/d/1R4hvCRKuZx5dP5gGqOhgESAiJDx8wa5N/view?usp=sharing</a></li>
+<li>Mirror: <a href="https://drive.google.com/file/d/1LazX1oXzzqIGB9kqJARohkiXlSBm5QUM/view?usp=sharing">https://drive.google.com/file/d/1LazX1oXzzqIGB9kqJARohkiXlSBm5QUM/view?usp=sharing</a></li>
+</ul>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <h3 class="text-start">Reversing</h3>
+            <hr />
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            chaos (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-43" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-43">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">chaos (100 pts) <span class="d-inline-block">- 159 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Can you find order in the midst of chaos?</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/f/orm4L#chall.py">https://imaginaryctf.org/f/orm4L#chall.py</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            snailchecker (100pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-45" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-45">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">snailchecker (100 pts) <span class="d-inline-block">- 92 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Optimize me, if you dare. Or not. It might run if you try hard enough.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/Q2CAo#check.py">https://imaginaryctf.org/r/Q2CAo#check.py</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            scrambled (359pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-44" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-44">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">scrambled (359 pts) <span class="d-inline-block">- 42 solves</span><br /><small class="text-muted">by cleverbear57</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>The flag is all jumbled up... or is it?</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/f/I3fmS#main">https://imaginaryctf.org/f/I3fmS#main</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Sheepish (433pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-4" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-4">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Sheepish (433 pts) <span class="d-inline-block">- 29 solves</span><br /><small class="text-muted">by puzzler7</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Mary had a flagchecker,
+its fleece was white as snow.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/T2QpC#sheepish.py">https://imaginaryctf.org/r/T2QpC#sheepish.py</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            vmcastle (446pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-46" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-46">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">vmcastle (446 pts) <span class="d-inline-block">- 26 solves</span><br /><small class="text-muted">by Eth007</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>There are no rules of architecture for a castle in the clouds.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/oPLIM#vm">https://imaginaryctf.org/r/oPLIM#vm</a>
+<a href="https://imaginaryctf.org/r/UVfdl#program">https://imaginaryctf.org/r/UVfdl#program</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Typechecker (482pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-12" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-12">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Typechecker (482 pts) <span class="d-inline-block">- 15 solves</span><br /><small class="text-muted">by maple3142</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>All you need is to make it compile without error!</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/l4HCZ#ts.ts">https://imaginaryctf.org/r/l4HCZ#ts.ts</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Goated (499pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-56" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-56">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Goated (499 pts) <span class="d-inline-block">- 3 solves</span><br /><small class="text-muted">by puzzler7</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>And everywhere that Mary went,
+The flag was sure to go.</p>
+<p>Note: The flag is not in <code>ictf{}</code> format - please add <code>ictf{}</code> around the correct input to the program.</p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/KBfxv#goated.py">https://imaginaryctf.org/r/KBfxv#goated.py</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card challenge">
+                        <div class="card-header challenge-header fw-bold">
+                            Unfactored (500pts)
+                        </div>
+                        <div class="card-body">
+                            <a class="text-decoration-none view-challenge-btn py-1 px-4" data-bs-toggle="modal" data-bs-target="#challenge-modal-1" href="#">
+                                <i class="fas fa-caret-right"></i> VIEW CHALLENGE <i class="fas fa-caret-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="challenge-modal-1">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center w-100">Unfactored (500 pts) <span class="d-inline-block">- 0 solves</span><br /><small class="text-muted">by Robin_Jadoul</small></h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <b>Description</b>
+                                <p>Something in the challenge is unfactored for sure, but does it really matter if everything else is factor?
+Usage: <code>./ictf.unfactored &lt;flag&gt;</code></p>
+
+                                <b>Attachments</b>
+                                <p><a href="https://imaginaryctf.org/r/afRbW#ictf.unfactored">https://imaginaryctf.org/r/afRbW#ictf.unfactored</a></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center w-100">
+                                    <button type="button" class="btn btn-secondary w-50" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+
+    <footer class="bg-darker-gray text-white p-2 d-flex align-items-center justify-content-around mt-auto">
+    <small>
+        Made with
+        <a class="text-white text-decoration-none cool-link" data-bs-toggle="modal" data-bs-target="#credits" href="#">
+            ImaginaryCTF
+        </a>
+    </small>
+    <div>
+        <a href="https://twitter.com/ImaginaryCtf" class="me-2 text-white text-decoration-none" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.reddit.com/r/ICTF/" class="me-2 text-white text-decoration-none" target="_blank">
+            <i class="fab fa-reddit-alien"></i>
+        </a>
+        <a href="https://discord.gg/QxFdGYPd4P" class="me-2 text-white text-decoration-none" target="_blank">
+            <i class="fab fa-discord"></i>
+        </a>
+    </div>
+    <div class="modal fade" id="credits">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">About ImaginaryCTF</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>ImaginaryCTF is a platform created by Et3rnos that brings the beauty of CTF Competitions to discord, releasing a challenge every day</p>
+                    <a class="d-block btn btn-success mb-2" target="_blank" href="https://github.com/Et3rnos/ImaginaryCTF">View ImaginaryCTF on GitHub</a>
+                    <a class="d-block btn btn-danger mb-2" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#support" href="#">Support ImaginaryCTF Creator</a>
+                    <a class="d-block btn btn-dark" href="https://et3rnos.github.io/hireme" target="_blank">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="support">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">Support Et3rnos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Glad to know you are planning on supporting me!</p>
+                    <div class="mb-2">
+                        <a class="btn btn-danger" target="_blank" href="https://patreon.com/et3rnos">Support Me On Patreon <i class="fab fa-patreon"></i></a>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" target="_blank" href="https://www.paypal.com/donate?hosted_button_id=JSM77LBGLJ3FG">Support Me With Paypal <i class="fab fa-paypal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/eeaba7a5c6.js"></script>
+    <script src="js/site7082.js?v=iCCnGY6acmDdTRru-NXP5d3m425iqdOd0iEEzjMUk8I"></script>
+</body>
+
+<!-- Mirrored from 2023.imaginaryctf.org/Challenges by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 15:26:47 GMT -->
+</html>

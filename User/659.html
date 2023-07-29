@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from 2023.imaginaryctf.org/User/659 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 16:10:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MikalaiLappo - ImaginaryCTF</title>
+    <meta name="author" content="Et3rnos" />
+    <link rel="icon" type="image/png" href="../img/icon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../css/site84bc.css?v=uUxEKgR3yGX0ovIIlJolHelMsV8BandW1paeVYqlF_A" />
+    
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MH677SC');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body class="text-center bg-light d-flex flex-column min-vh-100">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MH677SC"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+<nav class="navbar navbar-dark sticky-top p-0 text-center">
+    <div class="w-100 bg-logo p-2">
+        <a class="text-decoration-none" href="../index.html">
+            <div class="navbar-brand float-start ms-2">
+                <img src="../img/logo.png" height="40" class="d-inline-block align-middle logo-img" alt="iCTF">
+            </div>
+            <span class="logo-text text-white">ImaginaryCTF 2023</span>
+        </a>
+        <button class="navbar-toggler sidenav-toggler float-end m-1" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="menu sidenav bg-darker-smooth" style="transform: translate(100%)">
+        <ul class="navbar-nav p-2 pl-1 pr-1 big-rounded">
+            <li class="nav-item menu-item mt-1 border-bottom border-2 text-nowrap">
+                <div class="nav-roo-container float-start ms-3">
+                    
+                </div>
+                <a class="nav-link menu-link" href="../index.html">Home Page</a>
+                <div class="nav-roo-container float-end me-3">
+                    
+                </div>
+            </li>
+            <li class="nav-item menu-item mt-2 border-bottom border-2 text-nowrap">
+                <div class="nav-roo-container float-start ms-3">
+                    
+                </div>
+                <a class="nav-link menu-link" href="../Challenges.html">Challenges</a>
+                <div class="nav-roo-container float-end me-3">
+                    
+                </div>
+            </li>
+            <li class="nav-item menu-item mt-2 border-bottom border-2 text-nowrap">
+                <div class="nav-roo-container float-start ms-3">
+                    
+                </div>
+                <a class="nav-link menu-link" href="../Leaderboard.html">Leaderboard</a>
+                <div class="nav-roo-container float-end me-3">
+                    
+                </div>
+            </li>
+            <li class="nav-item menu-item mt-2 border-bottom border-2 text-nowrap">
+                <div class="nav-roo-container float-start ms-3">
+                    
+                </div>
+                <a class="nav-link menu-link" href="../Solves.html">Solves</a>
+                <div class="nav-roo-container float-end me-3">
+                    
+                </div>
+            </li>
+                <li class="nav-item menu-item mt-2 border-bottom border-2 text-nowrap">
+                    <div class="nav-roo-container float-start ms-3">
+                        
+                    </div>
+                    <a class="nav-link menu-link" href="../Register.html">Register</a>
+                    <div class="nav-roo-container float-end me-3">
+                        
+                    </div>
+                </li>
+                <li class="nav-item menu-item mt-2 border-bottom border-2 text-nowrap">
+                    <div class="nav-roo-container float-start ms-3">
+                        
+                    </div>
+                    <a class="nav-link menu-link d-inline-block" href="../Login.html">Login</a>
+                    <div class="nav-roo-container float-end me-3">
+                        
+                    </div>
+                </li>
+        </ul>
+    </div>
+</nav>
+
+    
+
+
+<div class="container mb-3">
+        <h2 class="m-3">
+            MikalaiLappo - 900 points
+                (212 / 880)
+        </h2>
+        <h4>
+        </h4>
+        <hr />
+            <div>
+                <canvas id="chart" width="50" height="200"></canvas>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@0.1.1"></script>
+            <script>
+                var ctx = document.getElementById('chart').getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        datasets: [
+                            {
+                                label: "Score",
+                                borderColor: "#3db6f2",
+                                backgroundColor: "#3db6f2",
+                                data: [
+                                    { x: moment("2023-07-21T19:00:18.7035140Z"), y: 0 },
+                                    { x: moment("2023-07-21T21:51:36.3434480Z"), y: 100 },
+                                    { x: moment("2023-07-21T22:59:10.7242960Z"), y: 200 },
+                                    { x: moment("2023-07-21T23:03:20.3063920Z"), y: 300 },
+                                    { x: moment("2023-07-22T08:53:05.1218690Z"), y: 400 },
+                                    { x: moment("2023-07-22T15:27:31.6299060Z"), y: 500 },
+                                    { x: moment("2023-07-22T16:26:48.5782140Z"), y: 600 },
+                                    { x: moment("2023-07-22T18:22:36.4538130Z"), y: 700 },
+                                    { x: moment("2023-07-22T19:13:11.2119480Z"), y: 800 },
+                                    { x: moment("2023-07-22T19:41:11.8966750Z"), y: 900 },
+                                    { x: moment(), y: 900 },
+                                ]
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            x: {
+                                type: 'time',
+                                time: {
+                                    tooltipFormat: 'DD/MM - HH:mm'
+                                },
+                            },
+                        },
+                    }
+                });
+            </script>
+        <div class="row mt-2">
+            <div class="col-md-6">
+                <h4>Solved Challenges</h4>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-light table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Challenge</th>
+                                    <th>Points</th>
+                                    <th>Solved At</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td>Discord</td>
+                                        <td>100</td>
+                                        <td><script>document.write(moment("2023-07-22T19:41:11.8966750Z").format('DD/MM HH:mm:ss'))</script></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Feedback Survey</td>
+                                        <td>100</td>
+                                        <td><script>document.write(moment("2023-07-22T19:13:11.2119480Z").format('DD/MM HH:mm:ss'))</script></td>
+                                    </tr>
+                                    <tr>
+                                        <td>idoriot-revenge</td>
+                                        <td>100</td>
+                                        <td><script>document.write(moment("2023-07-22T18:22:36.4538130Z").format('DD/MM HH:mm:ss'))</script></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Perfect Picture</td>
+                                        <td>100</td>
+                                        <td><script>document.write(moment("2023-07-22T16:26:48.5782140Z").format('DD/MM HH:mm:ss'))</script></td>
+                                    </tr>
+                                    <tr>
+                                        <td>roks</td>
+                                        <td>100</td>
+                                        <td><script>document.write(moment("2023-07-22T15:27:31.6299060Z").format('DD/MM HH:mm:ss'))</script></td>
+                                    </tr>
+                                    <tr>
+                                        <td>rsa</td>
+                                        <td>100</td>
+                                        <td><script>document.write(moment("2023-07-22T08:53:05.1218690Z").format('DD/MM HH:mm:ss'))</script></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Idoriot</td>
+                                        <td>100</td>
+                                        <td><script>document.write(moment("2023-07-21T23:03:20.3063920Z").format('DD/MM HH:mm:ss'))</script></td>
+                                    </tr>
+                                    <tr>
+                                        <td>inspection</td>
+                                        <td>100</td>
+                                        <td><script>document.write(moment("2023-07-21T22:59:10.7242960Z").format('DD/MM HH:mm:ss'))</script></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sanity Check</td>
+                                        <td>100</td>
+                                        <td><script>document.write(moment("2023-07-21T21:51:36.3434480Z").format('DD/MM HH:mm:ss'))</script></td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+            <div class="col-md-6">
+                <h4>Unsolved Challenges</h4>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-light table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Challenge</th>
+                                    <th>Points</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td>ret2win</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>blank</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>web</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>signpost</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>chaos</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>emoticons</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>blurry</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Login</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>signer</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>snailchecker</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ret2lose</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>rev</td>
+                                        <td>162</td>
+                                    </tr>
+                                    <tr>
+                                        <td>scrambled</td>
+                                        <td>359</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tan</td>
+                                        <td>418</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mailman</td>
+                                        <td>423</td>
+                                    </tr>
+                                    <tr>
+                                        <td>form</td>
+                                        <td>423</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wasteful</td>
+                                        <td>423</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sheepish</td>
+                                        <td>433</td>
+                                    </tr>
+                                    <tr>
+                                        <td>vmcastle</td>
+                                        <td>446</td>
+                                    </tr>
+                                    <tr>
+                                        <td>crypto</td>
+                                        <td>458</td>
+                                    </tr>
+                                    <tr>
+                                        <td>minimaler</td>
+                                        <td>474</td>
+                                    </tr>
+                                    <tr>
+                                        <td>minimal</td>
+                                        <td>477</td>
+                                    </tr>
+                                    <tr>
+                                        <td>generic-rop-challenge</td>
+                                        <td>480</td>
+                                    </tr>
+                                    <tr>
+                                        <td>pwn</td>
+                                        <td>482</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Typechecker</td>
+                                        <td>482</td>
+                                    </tr>
+                                    <tr>
+                                        <td>amogus</td>
+                                        <td>484</td>
+                                    </tr>
+                                    <tr>
+                                        <td>forensics</td>
+                                        <td>490</td>
+                                    </tr>
+                                    <tr>
+                                        <td>window-of-opportunity</td>
+                                        <td>490</td>
+                                    </tr>
+                                    <tr>
+                                        <td>steganographic</td>
+                                        <td>492</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blind guess</td>
+                                        <td>495</td>
+                                    </tr>
+                                    <tr>
+                                        <td>vault</td>
+                                        <td>496</td>
+                                    </tr>
+                                    <tr>
+                                        <td>lcode</td>
+                                        <td>497</td>
+                                    </tr>
+                                    <tr>
+                                        <td>vmdungeon</td>
+                                        <td>497</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Flagtor</td>
+                                        <td>498</td>
+                                    </tr>
+                                    <tr>
+                                        <td>System Hardening 9</td>
+                                        <td>498</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sanitized</td>
+                                        <td>498</td>
+                                    </tr>
+                                    <tr>
+                                        <td>You shall not call!</td>
+                                        <td>498</td>
+                                    </tr>
+                                    <tr>
+                                        <td>deletion</td>
+                                        <td>499</td>
+                                    </tr>
+                                    <tr>
+                                        <td>elliptic</td>
+                                        <td>499</td>
+                                    </tr>
+                                    <tr>
+                                        <td>You shall not call Revenge</td>
+                                        <td>499</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Imaginary Casino</td>
+                                        <td>499</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sus</td>
+                                        <td>499</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sanitized Revenge</td>
+                                        <td>499</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Goated</td>
+                                        <td>499</td>
+                                    </tr>
+                                    <tr>
+                                        <td>obscured</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Get and set</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Temu</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>System Hardening 8</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Unfactored</td>
+                                        <td>500</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </div>
+</div>
+    <footer class="bg-darker-gray text-white p-2 d-flex align-items-center justify-content-around mt-auto">
+    <small>
+        Made with
+        <a class="text-white text-decoration-none cool-link" data-bs-toggle="modal" data-bs-target="#credits" href="#">
+            ImaginaryCTF
+        </a>
+    </small>
+    <div>
+        <a href="https://twitter.com/ImaginaryCtf" class="me-2 text-white text-decoration-none" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.reddit.com/r/ICTF/" class="me-2 text-white text-decoration-none" target="_blank">
+            <i class="fab fa-reddit-alien"></i>
+        </a>
+        <a href="https://discord.gg/QxFdGYPd4P" class="me-2 text-white text-decoration-none" target="_blank">
+            <i class="fab fa-discord"></i>
+        </a>
+    </div>
+    <div class="modal fade" id="credits">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">About ImaginaryCTF</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>ImaginaryCTF is a platform created by Et3rnos that brings the beauty of CTF Competitions to discord, releasing a challenge every day</p>
+                    <a class="d-block btn btn-success mb-2" target="_blank" href="https://github.com/Et3rnos/ImaginaryCTF">View ImaginaryCTF on GitHub</a>
+                    <a class="d-block btn btn-danger mb-2" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#support" href="#">Support ImaginaryCTF Creator</a>
+                    <a class="d-block btn btn-dark" href="https://et3rnos.github.io/hireme" target="_blank">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="support">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">Support Et3rnos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Glad to know you are planning on supporting me!</p>
+                    <div class="mb-2">
+                        <a class="btn btn-danger" target="_blank" href="https://patreon.com/et3rnos">Support Me On Patreon <i class="fab fa-patreon"></i></a>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" target="_blank" href="https://www.paypal.com/donate?hosted_button_id=JSM77LBGLJ3FG">Support Me With Paypal <i class="fab fa-paypal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/eeaba7a5c6.js"></script>
+    <script src="../js/site7082.js?v=iCCnGY6acmDdTRru-NXP5d3m425iqdOd0iEEzjMUk8I"></script>
+</body>
+
+<!-- Mirrored from 2023.imaginaryctf.org/User/659 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 16:10:02 GMT -->
+</html>
